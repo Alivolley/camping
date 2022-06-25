@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-family: "Archivo";
+}

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Archivo-bold";
+  src: url("../fonts/Archivo-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+}
