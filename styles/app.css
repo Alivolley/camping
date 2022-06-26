@@ -7,10 +7,16 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-family: "Archivo";
+}
+
+.text {
+  text-align: justify;
 }
