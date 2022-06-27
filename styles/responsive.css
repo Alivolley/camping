@@ -1,8 +1,30 @@
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
+  .menu-opener {
+    display: none;
+  }
+  .collapse-menu {
+    display: none;
+  }
+  .main-menu {
+    display: flex;
+  }
+  .main-menu__link--respo {
+    display: none;
+  }
+  .accont {
+    display: flex;
+    margin-left: auto;
+  }
+  .nav-menu {
+    justify-content: start;
+  }
 }
 @media (min-width: 992px) {
+  .main-menu__link--respo {
+    display: list-item;
+  }
 }
 @media (min-width: 1200px) {
 }

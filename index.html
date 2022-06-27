@@ -4,35 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="images & icons/images/app-icon.png"
-    />
+    <link rel="icon" type="image/png" href="images-icons/images/app-icon.png" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/grid.css" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Camping project</title>
   </head>
   <body>
-    <div class="container">
-      <div class="text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        ratione officia reprehenderit qui quo suscipit sapiente pariatur
-        dolorem, inventore assumenda sunt reiciendis. Sint quod sit temporibus,
-        voluptatibus ea beatae ad odio exercitationem dicta quo dolore aliquam
-        debitis itaque ducimus, illo accusamus saepe deserunt magni totam at
-        tempore distinctio recusandae harum! Officia labore nihil reprehenderit
-        non amet placeat mollitia rerum eius est enim beatae excepturi nostrum
-        cumque porro aut blanditiis repellendus minus libero, praesentium omnis,
-        quae illum velit? Facilis amet, pariatur nemo numquam recusandae est,
-        illum, autem distinctio maiores vitae beatae blanditiis. Commodi
-        laudantium natus expedita dolorem voluptates fugiat ad labore velit
-        cumque eveniet saepe non, quas itaque amet ipsam, modi hic iure
-        aspernatur,
+    <header class="header">
+      <div class="container">
+        <nav class="nav-menu">
+          <a href="" class="logo">
+            <img
+              src="images-icons/svgs/logo.svg"
+              alt="site logo"
+              class="logo__image"
+            />
+          </a>
+
+          <!--main menu start  -->
+
+          <div class="main-menu">
+            <ul class="main-menu__links">
+              <li class="main-menu__link">
+                <a href="" class="main-menu__href">
+                  <i class="fas fa-home" id="main-menu__icon"></i>
+                  Home
+                </a>
+              </li>
+              <li class="main-menu__link">
+                <a href="" class="main-menu__href">
+                  <i class="fas fa-cubes" id="main-menu__icon"></i>
+                  Services
+                </a>
+              </li>
+              <li class="main-menu__link">
+                <a href="" class="main-menu__href">
+                  <i class="fas fa-photo-video" id="main-menu__icon"></i>
+                  Gallery
+                </a>
+              </li>
+              <li class="main-menu__link">
+                <a href="" class="main-menu__href">
+                  <i class="fas fa-user-friends" id="main-menu__icon"></i>
+                  Aboute us
+                </a>
+              </li>
+              <li class="main-menu__link main-menu__link--respo">
+                <a href="" class="main-menu__href">
+                  <i class="fas fa-phone" id="main-menu__icon"></i>
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="accont">
+            <a href="" class="accont__sign-in"
+              ><i class="fas fa-user-check" id="accont__icon"></i>Sign in</a
+            >
+
+            <a href="" class="accont__log-in"
+              ><i class="fas fa-user-plus" id="accont__icon"></i>Log in</a
+            >
+          </div>
+
+          <!--main menu end  -->
+
+          <div class="menu-opener">
+            <div class="menu-opener__line"></div>
+          </div>
+        </nav>
       </div>
-    </div>
+      <!-- collapse menu start -->
+
+      <section class="collapse-menu">
+        <h2 class="collapse-menu__title">welcome to Camping site</h2>
+
+        <ul class="collapse-menu__links">
+          <li class="collapse-menu__link">
+            <a href="" class="collapse-menu__href">
+              <i class="fas fa-home" id="collapse-menu__icon"></i>
+              Home
+            </a>
+          </li>
+          <li class="collapse-menu__link">
+            <a href="" class="collapse-menu__href">
+              <i class="fas fa-cubes" id="collapse-menu__icon"></i>
+              Services
+            </a>
+          </li>
+          <li class="collapse-menu__link">
+            <a href="" class="collapse-menu__href">
+              <i class="fas fa-photo-video" id="collapse-menu__icon"></i>
+              Gallery
+            </a>
+          </li>
+          <li class="collapse-menu__link">
+            <a href="" class="collapse-menu__href">
+              <i class="fas fa-user-friends" id="collapse-menu__icon"></i>
+              Aboute us
+            </a>
+          </li>
+          <li class="collapse-menu__link">
+            <a href="" class="collapse-menu__href">
+              <i class="fas fa-phone" id="collapse-menu__icon"></i>
+              Contact us
+            </a>
+          </li>
+        </ul>
+        <div class="collapse-menu__accont-wraper">
+          <a href="" class="collapse-menu__Sign-up">Sign up</a>
+          <a href="" class="collapse-menu__log-in">Log in</a>
+        </div>
+      </section>
+
+      <!-- collapse menu end -->
+    </header>
+
     <script src="scripts/app.js"></script>
   </body>
 </html>
