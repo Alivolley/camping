@@ -1,3 +1,13 @@
+@media (min-width: 380px) {
+  .header-box__describe {
+    width: 350px;
+  }
+
+  .header-box__title {
+    width: 350px;
+  }
+}
+
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
