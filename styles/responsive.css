@@ -6,6 +6,9 @@
   .header-box__title {
     width: 350px;
   }
+  .serv {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+  }
 }
 
 @media (min-width: 576px) {

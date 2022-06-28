@@ -3,6 +3,7 @@
   --orange: #e76f51;
   --grey: #d2d2d2;
   --dark: #3b3735;
+  --app-bg: #dbd9d8;
 }
 
 html {
@@ -22,18 +23,20 @@ body {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-family: "Archivo";
+  background-color: var(--app-bg);
 }
 
 /* header start */
 
 .header {
-  height: 90vh;
+  height: auto;
   width: 100%;
   background: linear-gradient(rgba(59, 55, 53, 0.4), rgba(59, 55, 53, 0.4)),
     url("../images-icons/images/header-bg.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 0 0 11rem 11rem;
+  padding-bottom: 30rem;
 }
 
 .nav-menu {
@@ -123,7 +126,8 @@ body {
   left: -100%;
   width: 22rem;
   height: 50rem;
-  background-color: #3b3735;
+  background-color: #2a1a5ee8;
+  backdrop-filter: blur(2rem);
   border-bottom-right-radius: 10rem;
   transition: all 0.5s;
 }
@@ -251,7 +255,7 @@ body {
 /* text box start */
 
 .header-box {
-  margin-top: 10rem;
+  margin-top: 20rem;
   color: var(--white);
   text-align: center;
 }
@@ -281,7 +285,7 @@ body {
   border: 0.2rem solid var(--orange);
   padding: 1.5rem 5rem 1.5rem 5rem;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 3rem;
@@ -292,8 +296,6 @@ body {
 
 .header-box__btn:hover {
   transform: scale(1.1);
-  /* background-color: var(--grey);
-  color: var(--orange); */
 }
 
 .header-box__btn:hover #header-box__icon {
@@ -314,3 +316,48 @@ body {
 /* text box end */
 
 /* header end */
+
+/* main start */
+
+.main {
+}
+
+.servs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15rem;
+}
+
+.serv {
+  background-color: var(--white);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  height: 28rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.serv__img {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.serv__title {
+  margin-bottom: 1rem;
+  font-family: "Archivo-bold";
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 3rem;
+}
+
+.serv__caption {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 27rem;
+}
+
+/* main end */
