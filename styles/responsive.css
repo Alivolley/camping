@@ -9,6 +9,15 @@
   .serv {
     margin: 0 1.5rem 1.5rem 1.5rem;
   }
+  .place {
+    margin: 1.5rem !important;
+  }
+}
+
+@media (max-width: 385px) {
+  .viewall__btn {
+    margin-top: 3rem;
+  }
 }
 
 @media (min-width: 576px) {
