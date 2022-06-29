@@ -1,3 +1,22 @@
+/* font families start */
+
+@font-face {
+   font-family: "Archivo-bold";
+   src: url("../fonts/Archivo-Black.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: "Archivo";
+   src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+}
+
+/* font families end */
+
 :root {
    --white: #fff;
    --orange: #e76f51;
@@ -26,6 +45,20 @@ body {
    line-height: 2.2rem;
    font-family: "Archivo";
    background-color: var(--app-bg);
+}
+
+.container {
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+@media (min-width: 576px) {
+   .container {
+      width: 85%;
+   }
 }
 
 /* header start */
@@ -321,9 +354,6 @@ body {
 
 /* main start */
 
-.main {
-}
-
 /* servs start */
 
 .servs {
@@ -367,9 +397,6 @@ body {
 /* servs end */
 
 /* destination sction start */
-
-.destinations {
-}
 
 .destination__desc {
    text-align: center;
@@ -543,7 +570,6 @@ body {
 .newslettr__view {
    padding-top: 3rem;
    padding-bottom: 3rem;
-   /* background-color: blueviolet; */
 }
 
 .newslettr__img {
@@ -551,7 +577,6 @@ body {
 }
 
 .newslettr__content {
-   /* background-color: rgb(43, 54, 87); */
    text-align: center;
 }
 
@@ -574,9 +599,6 @@ body {
    padding-left: 1.3rem;
    padding-right: 1.3rem;
    border-radius: 2rem;
-}
-
-.newsletter__email-icon {
 }
 
 .newsletter__input {
@@ -640,9 +662,6 @@ body {
    margin-bottom: 2.8rem;
 }
 
-.footer-tips__caption {
-}
-
 .footer-pages {
    max-width: 64rem;
    margin-left: auto;
@@ -658,9 +677,6 @@ body {
    font-family: "Archivo-bold";
    margin-bottom: 2.2rem;
    line-height: 3rem;
-}
-
-.know-us {
 }
 
 .know-us__link {
@@ -686,9 +702,6 @@ body {
    line-height: 3rem;
 }
 
-.plan {
-}
-
 .plan__link {
    list-style: none;
    padding-bottom: 0.5rem;
@@ -709,9 +722,6 @@ body {
    font-family: "Archivo-bold";
    margin-bottom: 2.2rem;
    line-height: 3rem;
-}
-
-.help {
 }
 
 .help__link {
@@ -745,7 +755,6 @@ body {
 }
 
 .copy-right {
-   /* background-color: rebeccapurple; */
    text-align: center;
 }
 .footer .container {
@@ -773,7 +782,123 @@ body {
    transform: scale(1.2);
 }
 
-.scroll-up__icon {
+/* footer end */
+
+/* media quries start */
+
+@media (max-width: 385px) {
+   .viewall__btn {
+      margin-top: 3rem;
+   }
 }
 
-/* footer end */
+@media (min-width: 380px) {
+   .collapse-menu {
+      width: 26rem;
+   }
+
+   .header-box__describe {
+      width: 350px;
+   }
+
+   .header-box__title {
+      width: 350px;
+   }
+   .serv {
+      margin: 0 1.5rem 1.5rem 1.5rem;
+   }
+   .place {
+      margin: 1.5rem !important;
+   }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+   .menu-opener {
+      display: none;
+   }
+   .collapse-menu {
+      display: none;
+   }
+   .main-menu {
+      display: flex;
+   }
+   .main-menu__link--respo {
+      display: none;
+   }
+   .accont {
+      display: flex;
+      margin-left: auto;
+   }
+   .nav-menu {
+      justify-content: start;
+   }
+
+   .footer {
+      margin-top: 18rem;
+   }
+
+   .scroll-up {
+      left: auto;
+      right: 1.5rem;
+   }
+}
+
+@media (min-width: 847px) {
+   .newsletter {
+      flex-direction: row-reverse;
+   }
+
+   .newslettr__content {
+      padding-right: 3rem;
+   }
+
+   .footer-tips {
+      padding: 3rem;
+   }
+
+   .footer-pages {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3rem;
+   }
+}
+
+@media (min-width: 992px) {
+   .main-menu__link--respo {
+      display: list-item;
+   }
+
+   .newsletter {
+      padding-left: 7rem;
+      padding-right: 7rem;
+      justify-content: center;
+      align-items: center;
+   }
+   .newslettr__content {
+      padding-right: 6rem;
+   }
+}
+
+@media (min-width: 1200px) {
+   .newsletter__form {
+      margin-top: 5rem;
+   }
+
+   .footer-tips {
+      margin-right: 7rem;
+   }
+
+   .download-app {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+   }
+
+   .footer-content-wraper {
+      flex-direction: row;
+   }
+}
+
+/* media quries end */
