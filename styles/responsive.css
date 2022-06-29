@@ -1,4 +1,8 @@
 @media (min-width: 380px) {
+   .collapse-menu {
+      width: 26rem;
+   }
+
    .header-box__describe {
       width: 350px;
    }
@@ -34,6 +38,27 @@
    .newslettr__content {
       padding-right: 3rem;
    }
+
+   .footer-content-wraper {
+      /* flex-direction: row; */
+      /* background-color: red; */
+   }
+
+   .footer-tips {
+      /* background-color: aqua; */
+      padding: 3rem;
+   }
+
+   .footer-pages {
+      display: flex;
+      justify-content: space-between;
+      /* background-color: blue; */
+      padding-top: 3rem;
+   }
+
+   .download-app {
+      /* background-color: burlywood; */
+   }
 }
 
 @media (min-width: 576px) {
@@ -58,6 +83,15 @@
    .nav-menu {
       justify-content: start;
    }
+
+   .footer {
+      margin-top: 18rem;
+   }
+
+   .scroll-up {
+      left: auto;
+      right: 1.5rem;
+   }
 }
 @media (min-width: 992px) {
    .main-menu__link--respo {
@@ -77,5 +111,19 @@
 @media (min-width: 1200px) {
    .newsletter__form {
       margin-top: 5rem;
+   }
+
+   .footer-tips {
+      margin-right: 7rem;
+   }
+
+   .download-app {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+   }
+
+   .footer-content-wraper {
+      flex-direction: row;
+      /* flex-wrap: wrap; */
    }
 }

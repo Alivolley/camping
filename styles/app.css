@@ -10,6 +10,7 @@
 html {
    box-sizing: border-box;
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 
 *,
@@ -125,9 +126,9 @@ body {
    position: fixed;
    top: 0;
    left: -100%;
-   width: 22rem;
+   width: 20rem;
    height: 50rem;
-   background-color: #2a1a5ee8;
+   background-color: var(--cream);
    backdrop-filter: blur(2rem);
    border-bottom-right-radius: 10rem;
    transition: all 0.5s;
@@ -138,9 +139,9 @@ body {
 }
 
 .collapse-menu__title {
-   color: var(--white);
+   color: var(--dark);
    line-height: 3.5rem;
-   border-bottom: 0.3rem solid var(--white);
+   border-bottom: 0.3rem solid var(--dark);
    border-bottom-right-radius: 0.4rem;
    border-bottom-left-radius: 30%;
    text-align: center;
@@ -159,7 +160,7 @@ body {
 
 .collapse-menu__href {
    text-decoration: none;
-   color: var(--white);
+   color: var(--dark);
 }
 
 #collapse-menu__icon {
@@ -175,9 +176,9 @@ body {
 .collapse-menu__log-in,
 .collapse-menu__sign-up {
    text-decoration: none;
-   color: var(--white);
+   color: var(--dark);
    padding: 1rem;
-   border: 0.2rem solid var(--white);
+   border: 0.2rem solid var(--dark);
    border-radius: 5rem;
    margin: 0 1rem;
 }
@@ -406,6 +407,15 @@ body {
    flex-grow: 1;
    margin-bottom: 3rem;
    max-width: 40rem;
+   transition: all 0.2s;
+}
+
+.place:hover {
+   box-shadow: 4px 4px 3px var(--orange);
+}
+
+.place:hover .place__img {
+   transform: scale(1.1);
 }
 
 .place__banner {
@@ -420,6 +430,7 @@ body {
 .place__img {
    width: 100%;
    height: 100%;
+   transition: all 0.2s;
 }
 
 .place__icon {
@@ -598,3 +609,171 @@ body {
 /* newsletter end */
 
 /* main end */
+
+/* footer strat */
+
+.footer {
+   background-color: var(--cream);
+   margin-top: 10rem;
+   border-radius: 11rem 11rem 0 0;
+   padding-bottom: 12rem;
+}
+
+.footer-content-wraper {
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   padding-top: 8rem;
+   text-align: center;
+}
+
+.footer-tips {
+   margin-bottom: 8rem;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 54rem;
+}
+
+.footer-tips__title {
+   font-family: "Archivo-bold";
+   line-height: 3rem;
+   margin-bottom: 2.8rem;
+}
+
+.footer-tips__caption {
+}
+
+.footer-pages {
+   max-width: 64rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.footer-pages__know-us {
+   margin-bottom: 7rem;
+   margin-right: 3rem;
+}
+
+.know-us__title {
+   font-family: "Archivo-bold";
+   margin-bottom: 2.2rem;
+   line-height: 3rem;
+}
+
+.know-us {
+}
+
+.know-us__link {
+   list-style: none;
+   padding-bottom: 0.5rem;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.know-us__link:hover {
+   transform: scale(1.1);
+   text-decoration: underline;
+}
+
+.footer-pages__plan {
+   margin-bottom: 7rem;
+   margin-right: 3rem;
+}
+
+.plan__title {
+   font-family: "Archivo-bold";
+   margin-bottom: 2.2rem;
+   line-height: 3rem;
+}
+
+.plan {
+}
+
+.plan__link {
+   list-style: none;
+   padding-bottom: 0.5rem;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.plan__link:hover {
+   transform: scale(1.1);
+   text-decoration: underline;
+}
+
+.footer-pages__help {
+   margin-bottom: 7rem;
+}
+
+.help__title {
+   font-family: "Archivo-bold";
+   margin-bottom: 2.2rem;
+   line-height: 3rem;
+}
+
+.help {
+}
+
+.help__link {
+   list-style: none;
+   padding-bottom: 0.5rem;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.help__link:hover {
+   transform: scale(1.1);
+   text-decoration: underline;
+}
+
+.download-app {
+   line-height: 3rem;
+   margin-bottom: 2.8rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.download-app__title {
+   font-family: "Archivo-bold";
+   margin-bottom: 2.2rem;
+}
+
+.download-app__image {
+   margin: 0.5rem;
+   cursor: pointer;
+}
+
+.copy-right {
+   /* background-color: rebeccapurple; */
+   text-align: center;
+}
+.footer .container {
+   position: relative;
+}
+
+.scroll-up {
+   background-color: var(--white);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 5.5rem;
+   height: 5.5rem;
+   border-radius: 2rem;
+   position: absolute;
+   top: -3rem;
+   right: 0;
+   left: 0;
+   margin: 0 auto;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.scroll-up:hover {
+   transform: scale(1.2);
+}
+
+.scroll-up__icon {
+}
+
+/* footer end */
